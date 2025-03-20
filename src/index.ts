@@ -5,7 +5,6 @@ import { tradMonth } from '$utils/blog/tradDate';
 import { servicesCardsAnimation } from '$utils/fonctionnalites/gsapCards';
 import { globalParallax } from '$utils/global/globalParallax';
 import loadScript from '$utils/global/loadScript';
-import { initMarker } from '$utils/global/marker';
 import { svgCms } from '$utils/global/tricks';
 import { heroDecoAnimation } from '$utils/home/assetLoad';
 import { ctaPictoLoop, homeTextAnimation } from '$utils/home/gsapHome';
@@ -40,9 +39,6 @@ window.Webflow.push(() => {
 
   // Component Navbar
   svgCms();
-
-  // Recettage
-  initMarker();
 
   // Cards quiz
   quizCards();

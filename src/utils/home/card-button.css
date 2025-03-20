@@ -1,41 +1,41 @@
-.quiz-card_component .quiz-card_button,
-.quiz-card-small_component .quiz-card_button,
-.livre-blanc_component .quiz-card_button {
+.quiz_card_component .quiz_card_button,
+.quiz_small-card_component .quiz_card_button,
+.livre-blanc_component .quiz_card_button {
   opacity: 0;
   transition: opacity 0.2s ease-out;
 }
 
-.quiz-card_component:hover .quiz-card_button,
-.quiz-card-small_component:hover .quiz-card_button {
+.quiz_card_component:hover .quiz_card_button,
+.quiz_small-card_component:hover .quiz_card_button {
   opacity: 1;
 }
 
-.quiz-card_component .quiz-card_button-text,
-.quiz-card-small_component .quiz-card_button-text {
+.quiz_card_component .quiz_card_button-text,
+.quiz_small-card_component .quiz_card_button-text {
   transform: translateX(-1rem);
   transition: transform 0.2s ease-out;
 }
 
-.quiz-card_component:hover .quiz-card_button-text,
-.quiz-card-small_component:hover .quiz-card_button-text {
+.quiz_card_component:hover .quiz_card_button-text,
+.quiz_small-card_component:hover .quiz_card_button-text {
   transform: translateX(0rem);
 }
 
-.blog-card-big_component .blog-card-big_asset {
+.blog_big-card_component .blog_big-card_asset {
   scale: 1.05;
   transition: scale 0.2s ease-out;
 }
 
-.blog-card-big_component:hover .blog-card-big_asset {
+.blog_big-card_component:hover .blog_big-card_asset {
   scale: 1;
 }
 
-.blog-card_component .blog-card_asset {
+.blog_card_component .blog_card_asset {
   scale: 1.05;
   transition: scale 0.2s ease-out;
 }
 
-.blog-card_component:hover .blog-card_asset {
+.blog_card_component:hover .blog_card_asset {
   scale: 1;
 }
 
@@ -46,6 +46,6 @@
   transition: opacity 0.2s ease-out;
 } */
 
-.livre-blanc_component:hover .quiz-card_button {
+.livre-blanc_component:hover .quiz_card_button {
   opacity: 1;
 }
