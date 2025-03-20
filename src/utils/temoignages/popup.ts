@@ -34,13 +34,13 @@ export function swiperTemoignagePopup() {
 
 export function showTemoignagePopup() {
   // Get all testimonial cards
-  const temoignageCards = document.querySelectorAll('.temoignages-cards_component');
+  const temoignageCards = document.querySelectorAll('.temoignages_cards_component');
 
   temoignageCards.forEach((card) => {
     // Add click handler to each card
     card.addEventListener('click', () => {
       const cardName = card.getAttribute('card');
-      const popupWrapper = document.querySelector('.temoignages-cards_popup-wrapper');
+      const popupWrapper = document.querySelector('.temoignages_cards_popup-wrapper');
 
       if (popupWrapper instanceof HTMLElement) {
         // Reinitialize Swiper before showing the popup
@@ -48,7 +48,7 @@ export function showTemoignagePopup() {
 
         // Find the matching popup slide
         const matchingSlide = document.querySelector(
-          `.temoignages-inner_component[popup="${cardName}"]`
+          `.temoignages_popup_component[popup="${cardName}"]`
         );
 
         if (matchingSlide) {
@@ -83,12 +83,12 @@ export function showTemoignagePopup() {
   });
 
   // Get all popup backgrounds
-  const popupBackgrounds = document.querySelectorAll('.temoignages-cards_popup-background');
+  const popupBackgrounds = document.querySelectorAll('.temoignages_cards_popup-background');
 
   popupBackgrounds.forEach((popupBackground) => {
     // Add click handler to each background
     popupBackground.addEventListener('click', () => {
-      const popupWrapper = document.querySelector('.temoignages-cards_popup-wrapper');
+      const popupWrapper = document.querySelector('.temoignages_cards_popup-wrapper');
       if (popupWrapper instanceof HTMLElement) {
         popupWrapper.style.transition = 'opacity 300ms';
         popupWrapper.style.opacity = '0';
