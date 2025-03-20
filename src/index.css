@@ -6,3 +6,6 @@
 @import './utils/blog/blog-card.css';
 @import './utils/formations/formations-card.css';
 @import './utils/livre-blanc/livre-blanc-card.css';
+body {
+  background-color: red !important;
+}
